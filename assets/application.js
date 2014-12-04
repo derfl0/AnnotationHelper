@@ -43,6 +43,8 @@ $(document).ready(function() {
                                 $('#annotation_box').remove();
                             }
                         });
+            } else {
+                $('#annotation_box').remove();
             }
         }
         ;
