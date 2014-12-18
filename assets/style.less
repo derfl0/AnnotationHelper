@@ -1,11 +1,20 @@
 ul#annotation_box {
-    position: absolute;
-    z-index: 9999999;
     background-color: @content-color-40;
-    padding: 3px;
     border: @base-color solid 1px;
     list-style-type: none;
-    li:hover {
-       background-color: @content-color-60; 
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 9999999;
+
+    li {
+        padding: 3px;
+        img {
+            padding: 2px;
+            vertical-align: middle;
+        }
+        &.current-item {
+            background-color: @content-color-60;
+        }        
     }
 }
