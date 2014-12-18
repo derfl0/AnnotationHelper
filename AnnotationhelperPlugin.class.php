@@ -14,7 +14,7 @@ class AnnotationhelperPlugin extends StudIPPlugin implements SystemPlugin
     public function search_action()
     {
         $needle    = Request::get('needle');
-        $vis_query = get_vis_query();
+        $vis_query = get_vis_query('aum');
 
         $query = "SELECT aum.user_id, aum.username,
                          CONCAT(aum.Vorname, ' ', aum.Nachname, ' (', aum.username, ')') AS name
